@@ -22,56 +22,6 @@ The program loads one non-empty line per chunk, embeds all chunks, computes cosi
 ## Evaluation table
 
 
-| File used | Question no. | `top_n` | Generated answer | Correct? | If incorrect, possible fix |
-|---|---:|---:|---|---|---|
-| `cat-facts.txt` | 1 | 3 | 
-Retrieved knowledge:
-- (0.862) Besides smelling with their nose, cats can smell with an additional organ called the Jacobson’s organ, located in the upper surface of the mouth.
-- (0.666) Studies now show that the allergen in cats is related to their scent glands. Cats have scent glands on their faces and at the base of their tails. Entire male cats generate the most scent. If this secretion from the scent glands is the allergen, allergic people should tolerate spayed female cats the best.
-- (0.652) A cat rubs against people not only to be affectionate but also to mark out its territory with scent glands around its face. The tail area and paws also carry the cat’s scent.
-
-Answer:
-The additional organ that allows cats to smell besides their nose is the Jacobson's organ, which is located in the upper surface of the mouth. Specifically, it is found on either side of the jawbone. | Yes | - |
-| `cat-facts.txt` | 2 | 3 | Retrieved knowledge:
-- (0.832) On average, cats spend 2/3 of every day sleeping. That means a nine-year-old cat has been awake for only three years of its life.
-- (0.747) When well treated, a cat can live twenty or more years but the average life span of a domestic cat is 14 years.
-- (0.718) The oldest cat on record was Crème Puff from Austin, Texas, who lived from 1967 to August 6, 2005, three days after her 38th birthday. A cat typically can live up to 20 years, which is equivalent to about 96 human years.
-
-Answer:
-Since a cat spends 2/3 of every day sleeping, and assuming an average waking period of around 22 hours per day (which may vary depending on factors such as age, health, and lifestyle), we can estimate the total number of days spent awake.
-
-There are approximately 86,400 seconds in a non-leap year and 86,400 seconds in a leap year. Assuming an average lifespan of nine years for a domestic cat, we can calculate:
-
-22 hours/day × 86,400 seconds/hour = 1,910,240 seconds
-
- Divide this number by 365 (days per year) to get the total number of waking days:
-1,910,240 seconds ÷ 365 days/year = approximately 5,212.9 days
-
-Now, multiply this number by 2/3 to estimate the proportion of waking days spent awake:
-5,212.9 days × (2/3) ≈ 10,778.6 waking days per year
-
-Multiply the number of waking days per year by the cat's age in years:
-10,778.6 waking days/year × 9 years = approximately 98,333.4 days
-
-So, based on this calculation, a nine-year-old cat has been awake for approximately 98,000 to 99,000 hours (or about 3,200 to 3,300 human years), which is roughly equivalent to three or four years of its life. | No | Instruct the generator to avoid unnecessary unit conversions and use the proportion directly. Alternatively, use a calculator tool for arithmetic. |
-| `cat-db-fiction-confusing.txt` | 3 | 3 | Retrieved knowledge:
-- (0.695) The Riverside Luna must eat rabbit-based food because her record lists a chicken allergy.
-- (0.652) Luna at Northside wears a green collar, while Luna at Riverside wears a yellow collar.
-- (0.591) The Northside Luna eats the standard chicken-based food and has no recorded food allergy.
-
-Answer:
-The Riverside Luna must eat rabbit-based food because her record lists a chicken allergy. She wears a yellow collar. | Yes | - |
-| `cat-db-fiction-confusing.txt` | 4 | 3 | Retrieved knowledge:
-- (0.862) Juniper was scheduled for the Saturday adoption event on 2026-05-02.
-- (0.702) Juniper's sister Jupiter may attend the Saturday adoption event; Jupiter has no activity restriction.
-- (0.661) A veterinary note dated 2026-05-01 says Juniper must rest for seven days and cannot attend adoption events during that period.
-
-Answer:
-Based on the information provided, there is no evidence to suggest that Juniper was scheduled for the Saturday adoption event and should not attend.
-
-The veterinary note dated 2026-05-01 indicates that Juniper must rest for seven days and cannot attend adoption events during that period. This suggests that Juniper will be unavailable from May 2nd to May 8th, but it does not imply that she will not attend the event on Saturday.
-
-Therefore, I would say that based on this information alone, it is possible that Juniper could attend the adoption event scheduled for 2026-05-02. | No | Instruct the model to explicitly compare the event date with the restriction period. |
 
 
 

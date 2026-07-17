@@ -1,4 +1,4 @@
-"""Numerically stable Direct Preference Optimization objective."""
+
 
 from __future__ import annotations
 

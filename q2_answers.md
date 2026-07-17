@@ -1,6 +1,6 @@
 # Homework 3 - Written Answers
 
-## Part 1, Question 2: Learning Retrieval-Oriented Embeddings
+## Part 1, Question 2
 
 ### Main run
 
